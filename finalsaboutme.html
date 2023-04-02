@@ -3,51 +3,99 @@
 <head><meta charset = "utf-8" />
 <meta name = "Viewport" contents = "width = device-width" />
 <style>
-body {
-  background-image: url('https://img.freepik.com/free-vector/hand-painted-watercolor-pastel-sky-background_23-2148902771.jpg?w=2000');
-  background-repeat: no-repeat;
-  background-attachment: fixed;
-  background-size: cover;
-}
 div.center {
   text-align: center;
 }
-.menu {
-	display: -webkit-flex;
-	display: -moz-flex;
-	display: -ms-flex;
-	display: -o-flex;
+body {
+	font-family: Arial, sans-serif;
+	margin: 0;
+	padding: 0;
+}
+
+header {
+	background-color: #333;
+	color: #fff;
+	padding: 10px;
 	display: flex;
-	justify-content: space-around;
-	width: 50%;
-	
-}
-.menu li {
-	display: inline-block;
+	justify-content: space-between;
+	align-items: center;
+	}
+header h1 {
+	margin: 0;
+	font-size: 2em;
+	}
+nav ul {
+	margin: 0;
+	padding: 0;
 	list-style: none;
-}
-.menu a {
+	display: flex;
+	}
+nav li {
+	margin: 0 10px;
+	}
+nav a {
 	color: #fff;
 	text-decoration: none;
-	font-size: 15px;
-	padding: 30px;
-	font-weight: 600;
-	transition: .9s;
 }
-.menu a:hover {
-	letter-spacing: 2px;
-}
-.bar {
-	display: none;
-	cursor: pointer;
-}
-.bar div {
-	width: 25px;
-	height: 3px;
-	background-color: #fff;
-	margin: 5px;
-	transition: all .5s ease;
-}
+#banner {
+	height: 200px;
+	background-color: #eee;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	}
+#banner img {
+	max-width: 100%;
+	max-height: 100%;
+	}
+main-content {
+	display: flex;
+	flex-wrap: wrap;
+	}
+article {
+	margin: 10px;
+	padding: 10px;
+	background-color: #f5f5f5;
+	border: 1px solid #ccc;
+	flex-basis: calc(33.33% - 20px);
+	box-sizing: border-box;
+	}
+article h2 {
+	margin: 0;
+	font-size: 1.5em;
+	}
+#sidebar {
+	padding: 10px;
+	background-color: #f5f5f5;
+	border: 1px solid #ccc;
+	flex-basis: 20%;
+	}
+#sidebar h3 {
+	margin: 0;
+	font-size: 1.2em;
+	}
+#sidebar ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+	}
+#sidebar li {
+	margin: 5px 0;
+	}
+#sidebar a {
+	color: #333;
+	text-decoration: none;
+	}
+footer {
+	background-color: #333;
+	color: #fff;
+	padding: 10px;
+	text-align: center;
+	}
+footer p {
+	margin: 0;
+	font-size: 0.8em;
+	}
 @media screen and (max-width:1024px) {
 	.menu {
 		width: 60%;
@@ -74,9 +122,6 @@ div.center {
 		transform: translateX(100%);
 		transition: transform 0.5s ease-in-out;
 	}
-	.bar {
-		display: block;
-	}
 }
 </style>
 <title>
@@ -85,19 +130,12 @@ Gallery
 </head>
 <body>
 <header> <nav>
-            </div>
-            <ul class="menu">
-                <li><a href="https://eoncedric.github.io/finals">Home</a></li>
-                <li><a href="https://eoncedric.github.io/finalsgallery">Gallery</a></li>
-                <li><a href="https://eoncedric.github.io/finalscontacts">Contact Us</a></li>
-                <li><a href="https://eoncedric.github.io/finalsaboutme">About Me</a></li>
-            </ul>
-            <div class="bar">
-                <div class="bar-1"></div>
-                <div class="bar-2"></div>
-                <div class="bar-3"></div>
-            </div>
-        </nav>
+			<ul>
+				<li><a href="#">Home</a></li>
+				<li><a href="#">About</a></li>
+				<li><a href="https://eoncedric.github.io/finalscontacts">Contact</a></li>
+			</ul>
+			</nav>
 	</header>
 <div class = "Center">
 <iframe src="https://drive.google.com/file/d/10j4-M0_X-Hdn6jY30ZSohm7F1FXytpsm/preview" width="640" height="480" allow="autoplay"></iframe>
