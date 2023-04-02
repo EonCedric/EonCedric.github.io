@@ -110,42 +110,7 @@ div.center {
   padding: 10px;
   height: 500px;
 }  
-.menu {
-	display: -webkit-flex;
-	display: -moz-flex;
-	display: -ms-flex;
-	display: -o-flex;
-	display: flex;
-	justify-content: space-around;
-	width: 50%;
 	
-}
-.menu li {
-	display: inline-block;
-	list-style: none;
-}
-.menu a {
-	color: #fff;
-	text-decoration: none;
-	font-size: 15px;
-	padding: 30px;
-	font-weight: 600;
-	transition: .9s;
-}
-.menu a:hover {
-	letter-spacing: 2px;
-}
-.bar {
-	display: none;
-	cursor: pointer;
-}
-.bar div {
-	width: 25px;
-	height: 3px;
-	background-color: #fff;
-	margin: 5px;
-	transition: all .5s ease;
-}
 @media screen and (max-width:1024px) {
 	.menu {
 		width: 60%;
@@ -155,26 +120,7 @@ div.center {
 	body {
 		overflow-x: hidden;
 	}
-	.menu {
-		position: absolute;
-		right: 200%;
-		height: 90vh;
-		top: 10vh;
-		background-color: #000;
-		display: -webkit-flex;
-		display: -moz-flex;
-		display: -ms-flex;
-		display: -o-flex;
-		display: flex;
-		flex-direction: column;
-		align-items: center;
-		width: 100%;
-		transform: translateX(100%);
-		transition: transform 0.5s ease-in-out;
-	}
-	.bar {
-		display: block;
-	}
+
 }
 </style>
 <title>
@@ -183,6 +129,7 @@ Contact
 </head>
 <body>
 <header>
+	<h1>Tearannosaurus</h1>
 	<nav>
 			<ul>
 				<li><a href="#">Home</a></li>
